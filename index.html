@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electrical Calculators</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ElectroCalc Hub</h1>
+            <h2>Your destination for smooth and accurate circuit calculations.</h2>
+        </header>
+        <main>
+            <section id="home">
+                <h3>Step into ElectroCalc Hub, where electrical calculations are made simple and efficient! With our diverse range of calculators, including Ohm's Law, power analysis, and LED resistor calculations, solving complex electrical problems is just a click away. Click on any calculator below and start calculating with ease!</h3>
+                <div class="calculator-columns">
+                    <div class="calculator-column">
+                        <ul class="calculator-list">
+                            <li>
+                                <a href="#ohms-law" class="calculator-link">Ohm’s Law Calculator</a>
+                                <p>Calculate voltage, current, or resistance using Ohm's Law.</p>
+                            </li>
+                            <li>
+                                <a href="#power" class="calculator-link">Power Calculator</a>
+                                <p>Calculate electrical power based on voltage and current.</p>
+                            </li>
+                            <li>
+                                <a href="#voltage-divider" class="calculator-link">Voltage Divider Calculator</a>
+                                <p>Compute the output voltage of a voltage divider circuit.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="calculator-column">
+                        <ul class="calculator-list">
+                            <li>
+                                <a href="#resistor-code" class="calculator-link">Resistor Color Code Calculator</a>
+                                <p>Decode the color bands on a resistor to find its value.</p>
+                            </li>
+                            <li>
+                                <a href="#inductor-energy" class="calculator-link">Inductor Energy Calculator</a>
+                                <p>Calculate the energy stored in an inductor.</p>
+                            </li>
+                            <li>
+                                <a href="#capacitor-charge" class="calculator-link">Capacitor Charge/Discharge Calculator</a>
+                                <p>Calculate the voltage across a charging or discharging capacitor.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="calculator-column">
+                        <ul class="calculator-list">
+                            <li>
+                                <a href="#complex-impedance" class="calculator-link">Complex Impedance Calculator</a>
+                                <p>Calculate the impedance of a complex circuit.</p>
+                            </li>
+                            <li>
+                                <a href="#rc-time-constant" class="calculator-link">RC Time Constant Calculator</a>
+                                <p>Compute the time constant of an RC circuit.</p>
+                            </li>
+                            <li>
+                                <a href="#rlc-circuit" class="calculator-link">RLC Circuit Calculator</a>
+                                <p>Analyze the characteristics of an RLC circuit.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="calculator-column">
+                        <ul class="calculator-list">
+                            <li>
+                                <a href="#three-phase-power" class="calculator-link">Three-Phase Power Calculator</a>
+                                <p>Calculate the power in a three-phase system.</p>
+                            </li>
+                            <li>
+                                <a href="#transformer" class="calculator-link">Transformer Calculator</a>
+                                <p>Analyze the primary and secondary voltage and turns ratio of a transformer.</p>
+                            </li>
+                            <li>
+                                <a href="#filter-design" class="calculator-link">Filter Design Calculator</a>
+                                <p>Design a basic filter circuit.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="calculator-column">
+                        <ul class="calculator-list">
+                            <li>
+                                <a href="#decibel" class="calculator-link">Decibel (dB) Calculator</a>
+                                <p>Calculate power and voltage gain in decibels.</p>
+                            </li>
+                            <li>
+                                <a href="#op-amp" class="calculator-link">Operational Amplifier (Op-Amp) Calculator</a>
+                                <p>Calculate the output voltage of an inverting or non-inverting op-amp configuration.</p>
+                            </li>
+                            <li>
+                                <a href="#led-resistor" class="calculator-link">LED Resistor Calculator</a>
+                                <p>Determine the appropriate resistor value to use with LEDs in a circuit.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+
+            <!-- Calculator Sections -->
+            
+            <!-- Ohm's Law Calculator -->
+            <section id="ohms-law" class="calculator-section">
+                <h2>Ohm’s Law Calculator</h2>
+                <label for="ohms-voltage">Voltage (V):</label>
+                <input type="number" id="ohms-voltage">
+                <label for="ohms-current">Current (I):</label>
+                <input type="number" id="ohms-current">
+                <label for="ohms-resistance">Resistance (R):</label>
+                <input type="number" id="ohms-resistance">
+                <button onclick="calculateOhmsLaw()">Calculate</button>
+                <p id="ohms-law-result"></p>
+            </section>
+
+            <!-- Power Calculator -->
+            <section id="power" class="calculator-section">
+                <h2>Power Calculator</h2>
+                <label for="power-voltage">Voltage (V):</label>
+                <input type="number" id="power-voltage">
+                <label for="power-current">Current (I):</label>
+                <input type="number" id="power-current">
+                <button onclick="calculatePower()">Calculate</button>
+                <p id="power-result"></p>
+            </section>
+
+            <!-- Voltage Divider Calculator -->
+            <section id="voltage-divider" class="calculator-section">
+                <h2>Voltage Divider Calculator</h2>
+                <label for="divider-voltage">Input Voltage (V_in):</label>
+                <input type="number" id="divider-voltage">
+                <label for="resistor1">Resistor R1 (Ω):</label>
+                <input type="number" id="resistor1">
+                <label for="resistor2">Resistor R2 (Ω):</label>
+                <input type="number" id="resistor2">
+                <button onclick="calculateVoltageDivider()">Calculate</button>
+                <p id="voltage-divider-result"></p>
+            </section>
+
+            <!-- Resistor Color Code Calculator -->
+            <section id="resistor-code" class="calculator-section">
+                <h2>Resistor Color Code Calculator</h2>
+                <div class="resistor-band">
+                    <label for="band1">Band 1:</label>
+                    <select id="band1">
+                        <option value="0">Black</option>
+                        <option value="1">Brown</option>
+                        <option value="2">Red</option>
+                        <option value="3">Orange</option>
+                        <option value="4">Yellow</option>
+                        <option value="5">Green</option>
+                        <option value="6">Blue</option>
+                        <option value="7">Violet</option>
+                        <option value="8">Gray</option>
+                        <option value="9">White</option>
+                    </select>
+                </div>
+                <div class="resistor-band">
+                    <label for="band2">Band 2:</label>
+                    <select id="band2">
+                        <option value="0">Black</option>
+                        <option value="1">Brown</option>
+                        <option value="2">Red</option>
+                        <option value="3">Orange</option>
+                        <option value="4">Yellow</option>
+                        <option value="5">Green</option>
+                        <option value="6">Blue</option>
+                        <option value="7">Violet</option>
+                        <option value="8">Gray</option>
+                        <option value="9">White</option>
+                    </select>
+                </div>
+                <div class="resistor-band">
+                    <label for="band3">Multiplier:</label>
+                    <select id="band3">
+                        <option value="1">Black</option>
+                        <option value="10">Brown</option>
+                        <option value="100">Red</option>
+                        <option value="1000">Orange</option>
+                        <option value="10000">Yellow</option>
+                        <option value="100000">Green</option>
+                        <option value="1000000">Blue</option>
+                        <option value="10000000">Violet</option>
+                        <option value="0.1">Gold</option>
+                        <option value="0.01">Silver</option>
+                    </select>
+                </div>
+                <div class="resistor-band">
+                    <label for="tolerance">Tolerance:</label>
+                    <select id="tolerance">
+                        <option value="1">Brown ±1%</option>
+                        <option value="2">Red ±2%</option>
+                        <option value="0.5">Green ±0.5%</option>
+                        <option value="0.25">Blue ±0.25%</option>
+                        <option value="0.1">Violet ±0.1%</option>
+                        <option value="5">Gold ±5%</option>
+                        <option value="10">Silver ±10%</option>
+                    </select>
+                </div>
+                <button onclick="calculateResistance()">Calculate</button>
+                <div id="resistor-code-result"></div>
+            </section>
+
+            <!-- Inductor Energy Calculator -->
+            <section id="inductor-energy" class="calculator-section">
+                <h2>Inductor Energy Calculator</h2>
+                <label for="inductor-current">Current (I):</label>
+                <input type="number" id="inductor-current">
+                <label for="inductor-inductance">Inductance (L):</label>
+                <input type="number" id="inductor-inductance">
+                <button onclick="calculateInductorEnergy()">Calculate</button>
+                <p id="inductor-energy-result"></p>
+            </section>
+
+            <!-- Capacitor Charge/Discharge Calculator -->
+            <section id="capacitor-charge" class="calculator-section">
+                <h2>Capacitor Charge/Discharge Calculator</h2>
+                <label for="capacitor-voltage">Max Voltage (V_max):</label>
+                <input type="number" id="capacitor-voltage">
+                <label for="capacitor-time">Time (t):</label>
+                <input type="number" id="capacitor-time">
+                <label for="capacitor-capacitance">Capacitance (C):</label>
+                <input type="number" id="capacitor-capacitance">
+                <label for="capacitor-resistance">Resistance (R):</label>
+                <input type="number" id="capacitor-resistance">
+                <div>
+                    <input type="radio" id="charging" name="cap-action" value="charging" checked>
+                    <label for="charging">Charging</label>
+                    <input type="radio" id="discharging" name="cap-action" value="discharging">
+                    <label for="discharging">Discharging</label>
+                </div>
+                <button onclick="calculateCapacitorCharge()">Calculate</button>
+                <p id="capacitor-charge-result"></p>
+            </section>
+
+            <!-- Complex Impedance Calculator -->
+            <section id="complex-impedance" class="calculator-section">
+                <h2>Complex Impedance Calculator</h2>
+                <label for="impedance-resistance">Resistance (R) in Ohms:</label>
+                <input type="number" id="impedance-resistance">
+                <label for="impedance-reactance">Reactance (X) in Ohms:</label>
+                <input type="number" id="impedance-reactance">
+                <button onclick="calculateComplexImpedance()">Calculate</button>
+                <p id="complex-impedance-result"></p>
+            </section>
+
+            <!-- RC Time Constant Calculator -->
+            <section id="rc-time-constant" class="calculator-section">
+                <h2>RC Time Constant Calculator</h2>
+                <label for="rc-resistance">Resistance (R):</label>
+                <input type="number" id="rc-resistance">
+                <label for="rc-capacitance">Capacitance (C):</label>
+                <input type="number" id="rc-capacitance">
+                <button onclick="calculateRCTimeConstant()">Calculate</button>
+                <p id="rc-time-constant-result"></p>
+            </section>
+
+            <!-- RLC Circuit Calculator -->
+            <section id="rlc-circuit" class="calculator-section">
+                <h2>RLC Circuit Calculator</h2>
+                <label for="rlc-resistance">Resistance (R in ohms):</label>
+                <input type="number" id="rlc-resistance" step="any">
+            
+                <label for="rlc-inductance">Inductance (L in henrys):</label>
+                <input type="number" id="rlc-inductance" step="any">
+            
+                <label for="rlc-capacitance">Capacitance (C in farads):</label>
+                <input type="number" id="rlc-capacitance" step="any">
+            
+                <label for="rlc-frequency">Frequency (f in Hz):</label>
+                <input type="number" id="rlc-frequency" step="any">
+            
+                <button onclick="calculateRLC()">Calculate</button>
+                <p id="rlc-result"></p>
+            </section>
+            
+
+            <!-- Three-Phase Power Calculator -->
+            <section id="three-phase-power" class="calculator-section">
+                <h2>Three-Phase Power Calculator</h2>
+                <label for="three-phase-voltage">Line Voltage (V) in Volts:</label>
+                <input type="number" id="three-phase-voltage">
+                <label for="three-phase-current">Line Current (I) in Amperes:</label>
+                <input type="number" id="three-phase-current">
+                <label for="power-factor">Power Factor (pf):</label>
+                <input type="number" step="0.01" id="power-factor">
+                <button onclick="calculateThreePhasePower()">Calculate</button>
+                <p id="three-phase-power-result"></p>
+            </section>
+
+
+            <!-- Transformer Calculator -->
+            <section id="transformer" class="calculator-section">
+                <h2>Transformer Calculator</h2>
+                <label for="primary-voltage">Primary Voltage (V1):</label>
+                <input type="number" id="primary-voltage">
+                <label for="secondary-voltage">Secondary Voltage (V2):</label>
+                <input type="number" id="secondary-voltage">
+                <label for="primary-turns">Primary Turns (N1):</label>
+                <input type="number" id="primary-turns">
+                <label for="secondary-turns">Secondary Turns (N2):</label>
+                <input type="number" id="secondary-turns">
+                <button onclick="calculateTransformer()">Calculate</button>
+                <p id="transformer-result"></p>
+            </section>
+
+            <!-- Filter Design Calculator -->
+            <section id="filter-design" class="calculator-section">
+                <h2>Filter Design Calculator</h2>
+                <label for="filter-resistance">Resistance (R) in Ohms:</label>
+                <input type="number" id="filter-resistance">
+                <label for="filter-capacitance">Capacitance (C) in Farads:</label>
+                <input type="number" id="filter-capacitance">
+                <button onclick="calculateFilterDesign()">Calculate</button>
+                <p id="filter-design-result"></p>
+            </section>
+
+            <!-- Decibel (dB) Calculator -->
+            <section id="decibel" class="calculator-section">
+                <h2>Decibel (dB) Calculator</h2>
+                <label for="calc-type">Calculation Type:</label>
+                <select id="calc-type">
+                    <option value="power">Power Gain</option>
+                    <option value="voltage">Voltage Gain</option>
+                </select>
+                <div id="input-fields">
+                    <label for="input-value">Input Value (P_in or V_in):</label>
+                    <input type="number" id="input-value">
+                    <label for="output-value">Output Value (P_out or V_out):</label>
+                    <input type="number" id="output-value">
+                </div>
+                <button onclick="calculateDecibel()">Calculate</button>
+                <p id="decibel-result"></p>
+            </section>
+
+            <!-- Operational Amplifier (Op-Amp) Calculator -->
+            <section id="op-amp" class="calculator-section">
+                <h2>Operational Amplifier (Op-Amp) Calculator</h2>
+                <label for="op-amp-input-voltage">Input Voltage (V_in):</label>
+                <input type="number" id="op-amp-input-voltage">
+                <label for="op-amp-feedback-resistor">Feedback Resistor (R_f):</label>
+                <input type="number" id="op-amp-feedback-resistor">
+                <label for="op-amp-input-resistor">Input Resistor (R_in):</label>
+                <input type="number" id="op-amp-input-resistor">
+                <div>
+                    <input type="radio" id="inverting" name="op-amp-type" value="inverting" checked>
+                    <label for="inverting">Inverting</label>
+                    <input type="radio" id="non-inverting" name="op-amp-type" value="non-inverting">
+                    <label for="non-inverting">Non-Inverting</label>
+                </div>
+                <button onclick="calculateOpAmp()">Calculate</button>
+                <p id="op-amp-result"></p>
+            </section>
+    
+           <!-- LED Resistor Calculator -->
+            <section id="led-resistor" class="calculator-section">
+            <h2>LED Resistor Calculator</h2>
+            <label for="led-voltage">LED Voltage (V<sub>f</sub>):</label>
+            <input type="number" id="led-voltage">
+            <label for="led-current">LED Current (I<sub>f</sub>):</label>
+            <input type="number" id="led-current">
+            <label for="supply-voltage">Supply Voltage (V<sub>cc</sub>):</label>
+            <input type="number" id="supply-voltage">
+            <button onclick="calculateLEDResistor()">Calculate</button>
+            <p id="led-resistor-result"></p>
+            </section>
+
+            
+        </main>
+    </div>
+</body>
+</html>
