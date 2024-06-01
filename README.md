@@ -1,32 +1,32 @@
-#ElectroCalc Hub
+# ElectroCalc Hub
 
 ## Introduction
-Welcome to the ElectroCalc Hub, a comprehensive collection of calculators designed to assist students, professionals, and enthusiasts in various electrical and electronic calculations.
+Welcome to ElectroCalc Hub, a comprehensive collection of calculators crafted to streamline various electrical and electronic computations.
 
 ## Features
--  Access 15 specialized calculators covering a wide range of topics in the field of EEE.
--  Enjoy a user-friendly interface for seamless navigation and input.
--  Built using HTML, CSS, JavaScript, and jQuery.
+- Access specialized calculators covering a wide spectrum of topics related to electrical and electronic computations.
+- Enjoy an intuitive interface designed for seamless navigation and input.
+- Crafted with HTML, CSS, JavaScript, and jQuery for robust performance.
 
 ## Usage
-To utilize the calculators, simply navigate to the website and select the desired calculator from the menu. Input the required values, and the calculator will provide instant results. Feel free to explore and leverage these tools as needed for your projects and studies.
+Navigate effortlessly to the desired calculator, input your values, and obtain instant results. Explore and utilize these tools to enhance your projects and studies.
 
 ## Calculator List
-1. **Ohm's Law Calculator**: Calculate voltage, current, or resistance using Ohm's Law.
-2. **Power Calculator**: Compute power in a circuit.
-3. **Voltage Divider Calculator**: Determine output voltage of a voltage divider circuit.
-4. **Resistor Color Code Decoder**: Decode the color bands on a resistor to determine its resistance value.
-5. **Inductor Energy Calculator**: Measure energy stored in an inductor.
-6. **Capacitor Voltage Calculator**: Compute voltage across a capacitor during charging or discharging.
-7. **Impedance Calculator**: Calculate the impedance of a circuit.
-8. **RC Time Constant Calculator**: Compute the time constant of an RC circuit.
-9. **RLC Resonance Calculator**: Determine resonant frequency and damping factor of an RLC circuit.
-10. **Three-Phase Power Calculator**: Compute power in a three-phase system.
-11. **Transformer Characteristic Analyzer**: Analyze transformer characteristics and find the missing value (either voltage or turns).
-12. **Cut-off Frequency Calculator**: Calculate the cut-off frequency of a circuit.
-13. **Decibel Converter**: Convert power or voltage ratios to decibels.
-14. **Op-Amp Configuration Calculator**: Compute the output voltage of an inverting or non-inverting op-amp configuration.
-15. **LED Resistor Value Calculator**: Determine the appropriate resistor value to use with LEDs in a circuit.
+- **Ohm's Law Calculator**: Compute voltage, current, or resistance using Ohm's Law.
+- **Power Calculator**: Determine power in a circuit.
+- **Voltage Divider Calculator**: Calculate output voltage of a voltage divider circuit.
+- **Resistor Color Code Decoder**: Decode resistor color bands to determine resistance value.
+- **Inductor Energy Calculator**: Measure energy stored in an inductor.
+- **Capacitor Voltage Calculator**: Compute voltage across a capacitor during charging or discharging.
+- **Impedance Calculator**: Calculate circuit impedance.
+- **RC Time Constant Calculator**: Compute time constant of an RC circuit.
+- **RLC Resonance Calculator**: Determine resonant frequency and damping factor of an RLC circuit.
+- **Three-Phase Power Calculator**: Compute power in a three-phase system.
+- **Transformer Characteristic Analyzer**: Analyze transformer characteristics and find missing values.
+- **Cut-off Frequency Calculator**: Calculate cut-off frequency of a circuit.
+- **Decibel Converter**: Convert power or voltage ratios to decibels.
+- **Op-Amp Configuration Calculator**: Compute output voltage of op-amp configurations.
+- **LED Resistor Value Calculator**: Determine resistor value for LED circuits.
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
