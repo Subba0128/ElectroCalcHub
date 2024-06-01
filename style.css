@@ -49,23 +49,23 @@ header {
 }
 
 header h1 {
-    font-size: 1.75em;
+    font-size: 3em;
 }
 
 header h2 {
-    font-size: 1.5em;
+    font-size: 1.75em;
 }
 
 h3 {
     padding-top: 20px;
-    font-size: 1.25em;
+    font-size: 1.75em;
     text-align: center;
     margin-top: 20px;
     color: turquoise;
 }
 
 h4 {
-    font-size: 1.25em;
+    font-size: 1.75em;
     color: #a95eef;
 }
 
@@ -80,7 +80,7 @@ h4 {
 }
 
 .calculator-list a {
-    font-size: 1.25em;
+    font-size: 1.75em;
     color: #ffcc00;
     text-decoration: none;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
@@ -93,7 +93,7 @@ h4 {
 .calculator-list p {
     margin: 5px 0 15px 20px;
     color: #ddd;
-    font-size: 1.25em;
+    font-size: 1.75em;
 }
 
 .calculator-section {
@@ -107,7 +107,7 @@ h4 {
 }
 
 .calculator-section h2 {
-    font-size: 1.25em;
+    font-size: 2em;
     color: #8B008B;
 }
 
@@ -116,7 +116,7 @@ h4 {
     margin: 10px 0 5px;
     padding: 5px; /* Added padding for better spacing */
     color: #333;
-    font-size: 1.25em;
+    font-size: 1.75em;
     font-weight: bold; /* Bold text for emphasis */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     transition: color 0.3s ease; /* Smooth color transition */
@@ -132,7 +132,7 @@ h4 {
     margin-bottom: 20px;
     border: 2px solid #ccc;
     border-radius: 10px;
-    font-size: 1.25em;
+    font-size: 1.75em;
     transition: border-color 0.3s ease;
 }
 
@@ -145,7 +145,7 @@ h4 {
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    font-size: 1.25em;
+    font-size: 1.75em;
     transition: background-color 0.3s ease; /* Smooth background color transition */
 }
 
@@ -155,7 +155,7 @@ h4 {
 
 .calculator-section p {
         margin-top: 20px;
-        font-size: 1.25em;
+        font-size: 1.75em;
         color:#333333;
         font-weight: bold; /* Make the text bold */
         background-color: #B0E0E6; /* Add a light background color */
@@ -175,7 +175,7 @@ h4 {
 }
 
 .calculator-section select {
-    font-size: 1.25em;
+    font-size: 1.75em;
     padding: 8px;
     width: 100%;
 }
@@ -192,7 +192,7 @@ h4 {
     margin-bottom: 20px;
 }
 .calculator-section select {
-    font-size: 1.25em;
+    font-size: 1.75em;
     padding: 8px;
     width: 100%;
     border: 2px solid #ccc; /* Added border */
